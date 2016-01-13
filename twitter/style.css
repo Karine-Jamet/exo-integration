@@ -91,6 +91,20 @@ select:hover{
 .middle-droite .login{
   background-color: white;
   border-radius: 5px;
+  margin-top:50px;
+  padding: 20px;
+}
+
+.middle-droite .nouveau{
+  background-color: white;
+  border-radius: 5px;
+  margin-top:10px;
+  padding: 20px;
+  padding-top: 5px;
+}
+.middle-droite input{
+  display: block;
+  margin: 10px;
 }
 footer{
   background-color: none;
