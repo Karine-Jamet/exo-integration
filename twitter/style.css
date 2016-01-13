@@ -1,0 +1,103 @@
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+body{
+    background-image: url('DSCF2915.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  font-size: 13px;
+}
+header div{
+  display: inline-block;
+  height: 50px;
+  vertical-align: bottom;
+  margin: auto;
+  padding-top: 18px;
+}
+header a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 20px;
+  vertical-align: middle;
+  padding-bottom: 9px;
+
+}
+header .gauche a:hover {
+  border-bottom: 5px solid #55ACEE;
+  color:#55ACEE;
+}
+header .fa {
+  font-size: 25px;
+  color:#55ACEE;
+  vertical-align: middle;
+  margin: auto;
+}
+header .gauche{
+  text-align: left;
+  margin: auto;
+  position: absolute;
+  top:0;
+  left:15%;
+}
+header .droite{
+  position: absolute;
+  top: 20px;
+  right: 10%;
+  margin-top: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+select {
+  background-color:white;
+  border:none;
+}
+select:hover{
+  color:#55ACEE;
+}
+
+.middle-droite{
+  background-color: none;
+  display: inline-block;
+  width: 400px;
+  height: 90%;
+  margin:0;
+}
+.middle-gauche .tweet{
+  padding-top: 40%;
+  font-size: 12px;
+  font-style: italic;
+}
+.middle-gauche{
+  background-color: none;
+  float: left;
+  width: 500px;
+  height: 90%;
+  margin-left: 15%;
+  text-align: left;
+  color:white;
+}
+.middle-droite .login{
+  background-color: white;
+  border-radius: 5px;
+}
+footer{
+  background-color: none;
+  width: 100%;
+  height: 60px;
+  position:absolute;
+  bottom:0%;
+  left:0%;
+  font-size: 12px;
+}

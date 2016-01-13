@@ -1,0 +1,169 @@
+
+
+body, html{
+  margin: 0;
+  background: linear-gradient(white, #D3D8E8);
+  font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+  font-size: 13px;
+  height: 100%;
+}
+
+
+header{
+  background-color: #3b5998;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  color:#F3F5FB;
+
+}
+
+h1 {
+  color:white;
+  margin: 0;
+  font-size: 40px;
+  padding-top: 30px;
+  padding-left: 85px;
+  padding-bottom: 15px;
+}
+
+header form{
+  position:absolute;
+  top:0;
+  right: 50px;
+  margin-top: 15px;
+  max-height: 95px;
+  width: auto;
+}
+
+header a {
+  color:#6C97B9;
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+header a:hover {
+  color:#6C97B9;
+  text-decoration: underline;
+}
+
+#login div {
+  float: left;
+  margin-left: 10px;
+}
+
+#login input{
+  background-color: #F7FCBB;
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border:1px solid black;
+  line-height: 20px;
+  width: 160px;
+}
+#login input[type=checkbox]{
+  display: inline;
+  line-height:auto;
+  width: auto;
+}
+p {
+  display: inline;
+  color:#6C97B9;
+}
+
+#login input[type=password]{
+  margin-bottom: 10px;
+}
+
+#login input[type=submit]{
+  background-color: #5871A6;
+  color:white;
+  font-weight: bold;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4),inset 0px 1px 1px rgba(255, 255, 255, 0.4);
+  width: auto;
+  margin-top: 20px;
+
+}
+
+.gauche {
+  position: relative;
+  top:27px;
+  left:90px;
+  width: 35%;
+  color:#0E385F;
+}
+
+.droite {
+  position: absolute;
+  top:89px;
+  right:50px;
+  width: 35%;
+  color:black;
+}
+
+.droite h2{
+  font-size: 35px;
+  margin-bottom: 5px;
+
+}
+
+.droite h3{
+  font-size: 20px;
+  font-weight: lighter;
+  margin-top: 5px;
+
+}
+
+.droite input{
+  border-radius: 5px;
+  border: 1px gray solid;
+  margin: 3px;
+  line-height: 40px;
+  font-size: 20px;
+  background-color: #FDFDFD;
+  padding-left: 10px;
+  width: 350px;
+
+}
+
+.droite input[type=text]{
+  width: 164px;
+}
+
+.droite input[type=submit]{
+  width: 160px;
+  background-color: #69A355;
+  color:white;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.4),inset 0px -2px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+.droite label {
+display: block;
+font-size: 17px;
+font-weight: lighter;
+margin: 5px;
+
+}
+
+.droite a {
+  color:#5A61AE;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.droite a:hover {
+  text-decoration: underline;
+}
+
+.droite select {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color:lightgrey;
+    color:black;
+    height:30px;
+    padding-left: 10px;
+    width: 80px;
+
+}
