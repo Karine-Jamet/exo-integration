@@ -1,24 +1,22 @@
-html,body{
+html, body {
   width: 100%;
   height: 100%;
   margin: auto;
   text-align: center;
   font-family: Helvetica;
 }
-
-body{
-    background-image: url('DSCF2915.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+body {
+  background-image: url('DSCF2915.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-header{
+header {
   background-color: white;
   width: 100%;
   height: 50px;
   font-size: 13px;
 }
-header div{
+header div {
   display: inline-block;
   height: 50px;
   vertical-align: bottom;
@@ -31,26 +29,37 @@ header a {
   margin-right: 20px;
   vertical-align: middle;
   padding-bottom: 9px;
-
+  position: relative;
+  display: inline-block;
 }
-header .gauche a:hover {
-  border-bottom: 5px solid #55ACEE;
-  color:#55ACEE;
+header a::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  height: 0px;
+  width: 100%;
+  background: transparent;
+  transition: all ease 0.5s;
+}
+a:hover::after {
+  height: 5px;
+  background: #55ACEE;
 }
 header .fa {
   font-size: 25px;
-  color:#55ACEE;
+  color: #55ACEE;
   vertical-align: middle;
   margin: auto;
 }
-header .gauche{
+header .gauche {
   text-align: left;
   margin: auto;
   position: absolute;
-  top:0;
-  left:15%;
+  top: 0;
+  left: 15%;
 }
-header .droite{
+header .droite {
   position: absolute;
   top: 20px;
   right: 10%;
@@ -58,71 +67,145 @@ header .droite{
   padding: 0;
   vertical-align: middle;
 }
-
 select {
-  background-color:white;
-  border:none;
+  background-color: white;
+  border: none;
 }
-select:hover{
-  color:#55ACEE;
+select:hover {
+  color: #55ACEE;
 }
-
-.middle-droite{
+.middle-droite {
   background-color: none;
   display: inline-block;
-  width: 400px;
+  width: 300px;
   height: 90%;
-  margin:0;
+  margin: 0;
 }
-.middle-gauche .tweet{
-  padding-top: 40%;
+.middle-gauche .tweet {
+  padding-top: 15%;
   font-size: 12px;
   font-style: italic;
 }
-.middle-gauche{
+.middle-gauche .tweet p:nth-child(2), .middle-gauche .tweet p:nth-child(3) {
+  text-decoration: underline;
+}
+.middle-gauche h1 {
+  font-size: 38px;
+}
+.middle-gauche > p {
+  font-size: 21px;
+  line-height: 31px;
+}
+.middle-gauche {
   background-color: none;
   float: left;
-  width: 500px;
-  height: 90%;
+  width: 470px;
+  height: 80%;
   margin-left: 15%;
   text-align: left;
-  color:white;
+  color: white;
+  padding-top: 50px;
+  ;
 }
-.middle-droite .login{
+.middle-droite .login {
   background-color: white;
   border-radius: 5px;
-  margin-top:50px;
-  padding: 20px;
+  margin-top: 50px;
+  padding: 12px;
+  width: 302px;
+  height: 119px;
+  text-align: left;
 }
-
-.middle-droite .nouveau{
+.middle-droite input {
+  line-height: 25px;
+  border-radius: 5px;
+  font-size: 13px;
+  width: 276px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  display: inline-block;
+  padding-left: 5px;
+}
+.middle-droite input:focus {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+  border: 1px solid grey;
+  color: rgba(0, 0, 0, 0.1);
+}
+.middle-droite .login input[type=password] {
+  width: 160px;
+  text-align: left;
+}
+.middle-droite .login input[type=submit] {
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  background-color: #55ACEE;
+  font-weight: bold;
+  color: white;
+}
+.middle-droite .login input[type=checkbox] {
+  float: left;
+  width: 13px;
+  height: 30px;
+}
+.middle-droite .login p {
+  float: left;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.middle-droite .login a {
+  font-size: 12px;
+  color: #55ACEE;
+  text-decoration: none;
+}
+.middle-droite .nouveau {
+  width: 326px;
   background-color: white;
   border-radius: 5px;
-  margin-top:10px;
-  padding: 20px;
+  margin-top: 10px;
   padding-top: 5px;
 }
-.middle-droite input{
-  display: block;
-  margin: 10px;
+.middle-droite .nouveau H3 {
+  color: #292f33;
+  font-weight: 500;
+  display: inline;
+  float: left;
+  vertical-align: baseline;
+  margin: auto;
+  font-size: 16px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 12px;
+  box-shadow: 0 1px 0 #fff;
 }
-footer{
+.middle-droite .nouveau input[type=submit] {
+  background-color: #e99110;
+  background-image: linear-gradient(#ffcc4d, #e99110);
+  border: 1px solid #ec8b11;
+  color: #292f33;
+  width: auto;
+  position: relative;
+  top: 0;
+  left: 77px;
+  margin-bottom: 12px;
+}
+footer {
   background-color: none;
   width: 100%;
   height: 60px;
-  position:absolute;
-  bottom:0%;
-  left:0%;
+  clear: both;
   font-size: 12px;
-  color:white;
+  color: white;
   text-decoration: none;
+  position: relative;
+  top: -60px;
+  left: auto;
 }
-
 footer a {
-  color:white;
+  color: white;
   text-decoration: none;
   margin: 5px;
 }
-footer a:hover{
+footer a:hover {
   text-decoration: underline;
 }
